@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BB362CF1CC151C000504E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362CE1CC151C000504E8C /* AppDelegate.swift */; };
+		8BB362D11CC151C000504E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362D01CC151C000504E8C /* ViewController.swift */; };
+		8BB362D41CC151C000504E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB362D21CC151C000504E8C /* Main.storyboard */; };
+		8BB362D61CC151C000504E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB362D51CC151C000504E8C /* Assets.xcassets */; };
+		8BB362D91CC151C000504E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB362D71CC151C000504E8C /* LaunchScreen.storyboard */; };
+		8BB362E41CC151C000504E8C /* PinderChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362E31CC151C000504E8C /* PinderChatTests.swift */; };
+		8BB362EF1CC151C000504E8C /* PinderChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362EE1CC151C000504E8C /* PinderChatUITests.swift */; };
+		8BB363121CC1521400504E8C /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362FD1CC1521400504E8C /* SocketAckEmitter.swift */; };
+		8BB363131CC1521400504E8C /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362FE1CC1521400504E8C /* SocketAckManager.swift */; };
+		8BB363141CC1521400504E8C /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB362FF1CC1521400504E8C /* SocketAnyEvent.swift */; };
+		8BB363151CC1521400504E8C /* SocketClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363001CC1521400504E8C /* SocketClientSpec.swift */; };
+		8BB363161CC1521400504E8C /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363011CC1521400504E8C /* SocketEngine.swift */; };
+		8BB363171CC1521400504E8C /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363021CC1521400504E8C /* SocketEngineClient.swift */; };
+		8BB363181CC1521400504E8C /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363031CC1521400504E8C /* SocketEnginePacketType.swift */; };
+		8BB363191CC1521400504E8C /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363041CC1521400504E8C /* SocketEnginePollable.swift */; };
+		8BB3631A1CC1521400504E8C /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363051CC1521400504E8C /* SocketEngineSpec.swift */; };
+		8BB3631B1CC1521400504E8C /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363061CC1521400504E8C /* SocketEngineWebsocket.swift */; };
+		8BB3631C1CC1521400504E8C /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363071CC1521400504E8C /* SocketEventHandler.swift */; };
+		8BB3631D1CC1521400504E8C /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363081CC1521400504E8C /* SocketIOClient.swift */; };
+		8BB3631E1CC1521400504E8C /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363091CC1521400504E8C /* SocketIOClientOption.swift */; };
+		8BB3631F1CC1521400504E8C /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3630A1CC1521400504E8C /* SocketIOClientStatus.swift */; };
+		8BB363201CC1521400504E8C /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3630B1CC1521400504E8C /* SocketLogger.swift */; };
+		8BB363211CC1521400504E8C /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3630C1CC1521400504E8C /* SocketPacket.swift */; };
+		8BB363221CC1521400504E8C /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3630D1CC1521400504E8C /* SocketParsable.swift */; };
+		8BB363231CC1521400504E8C /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3630E1CC1521400504E8C /* SocketStringReader.swift */; };
+		8BB363241CC1521400504E8C /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3630F1CC1521400504E8C /* SocketTypes.swift */; };
+		8BB363251CC1521400504E8C /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363101CC1521400504E8C /* SwiftRegex.swift */; };
+		8BB363261CC1521400504E8C /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB363111CC1521400504E8C /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BB362E01CC151C000504E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB362C31CC151BF00504E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB362CA1CC151BF00504E8C;
+			remoteInfo = PinderChat;
+		};
+		8BB362EB1CC151C000504E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB362C31CC151BF00504E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB362CA1CC151BF00504E8C;
+			remoteInfo = PinderChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BB362CB1CC151BF00504E8C /* PinderChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinderChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB362CE1CC151C000504E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB362D01CC151C000504E8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BB362D31CC151C000504E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB362D51CC151C000504E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB362D81CC151C000504E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BB362DA1CC151C000504E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB362DF1CC151C000504E8C /* PinderChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinderChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB362E31CC151C000504E8C /* PinderChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinderChatTests.swift; sourceTree = "<group>"; };
+		8BB362E51CC151C000504E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB362EA1CC151C000504E8C /* PinderChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinderChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB362EE1CC151C000504E8C /* PinderChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinderChatUITests.swift; sourceTree = "<group>"; };
+		8BB362F01CC151C000504E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB362FD1CC1521400504E8C /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		8BB362FE1CC1521400504E8C /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		8BB362FF1CC1521400504E8C /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		8BB363001CC1521400504E8C /* SocketClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientSpec.swift; sourceTree = "<group>"; };
+		8BB363011CC1521400504E8C /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		8BB363021CC1521400504E8C /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		8BB363031CC1521400504E8C /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		8BB363041CC1521400504E8C /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		8BB363051CC1521400504E8C /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		8BB363061CC1521400504E8C /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		8BB363071CC1521400504E8C /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		8BB363081CC1521400504E8C /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		8BB363091CC1521400504E8C /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		8BB3630A1CC1521400504E8C /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		8BB3630B1CC1521400504E8C /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		8BB3630C1CC1521400504E8C /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		8BB3630D1CC1521400504E8C /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		8BB3630E1CC1521400504E8C /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		8BB3630F1CC1521400504E8C /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		8BB363101CC1521400504E8C /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
+		8BB363111CC1521400504E8C /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BB362C81CC151BF00504E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB362DC1CC151C000504E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB362E71CC151C000504E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BB362C21CC151BF00504E8C = {
+			isa = PBXGroup;
+			children = (
+				8BB362FC1CC1521400504E8C /* Source */,
+				8BB362CD1CC151C000504E8C /* PinderChat */,
+				8BB362E21CC151C000504E8C /* PinderChatTests */,
+				8BB362ED1CC151C000504E8C /* PinderChatUITests */,
+				8BB362CC1CC151BF00504E8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BB362CC1CC151BF00504E8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB362CB1CC151BF00504E8C /* PinderChat.app */,
+				8BB362DF1CC151C000504E8C /* PinderChatTests.xctest */,
+				8BB362EA1CC151C000504E8C /* PinderChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB362CD1CC151C000504E8C /* PinderChat */ = {
+			isa = PBXGroup;
+			children = (
+				8BB362CE1CC151C000504E8C /* AppDelegate.swift */,
+				8BB362D01CC151C000504E8C /* ViewController.swift */,
+				8BB362D21CC151C000504E8C /* Main.storyboard */,
+				8BB362D51CC151C000504E8C /* Assets.xcassets */,
+				8BB362D71CC151C000504E8C /* LaunchScreen.storyboard */,
+				8BB362DA1CC151C000504E8C /* Info.plist */,
+			);
+			path = PinderChat;
+			sourceTree = "<group>";
+		};
+		8BB362E21CC151C000504E8C /* PinderChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BB362E31CC151C000504E8C /* PinderChatTests.swift */,
+				8BB362E51CC151C000504E8C /* Info.plist */,
+			);
+			path = PinderChatTests;
+			sourceTree = "<group>";
+		};
+		8BB362ED1CC151C000504E8C /* PinderChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BB362EE1CC151C000504E8C /* PinderChatUITests.swift */,
+				8BB362F01CC151C000504E8C /* Info.plist */,
+			);
+			path = PinderChatUITests;
+			sourceTree = "<group>";
+		};
+		8BB362FC1CC1521400504E8C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8BB362FD1CC1521400504E8C /* SocketAckEmitter.swift */,
+				8BB362FE1CC1521400504E8C /* SocketAckManager.swift */,
+				8BB362FF1CC1521400504E8C /* SocketAnyEvent.swift */,
+				8BB363001CC1521400504E8C /* SocketClientSpec.swift */,
+				8BB363011CC1521400504E8C /* SocketEngine.swift */,
+				8BB363021CC1521400504E8C /* SocketEngineClient.swift */,
+				8BB363031CC1521400504E8C /* SocketEnginePacketType.swift */,
+				8BB363041CC1521400504E8C /* SocketEnginePollable.swift */,
+				8BB363051CC1521400504E8C /* SocketEngineSpec.swift */,
+				8BB363061CC1521400504E8C /* SocketEngineWebsocket.swift */,
+				8BB363071CC1521400504E8C /* SocketEventHandler.swift */,
+				8BB363081CC1521400504E8C /* SocketIOClient.swift */,
+				8BB363091CC1521400504E8C /* SocketIOClientOption.swift */,
+				8BB3630A1CC1521400504E8C /* SocketIOClientStatus.swift */,
+				8BB3630B1CC1521400504E8C /* SocketLogger.swift */,
+				8BB3630C1CC1521400504E8C /* SocketPacket.swift */,
+				8BB3630D1CC1521400504E8C /* SocketParsable.swift */,
+				8BB3630E1CC1521400504E8C /* SocketStringReader.swift */,
+				8BB3630F1CC1521400504E8C /* SocketTypes.swift */,
+				8BB363101CC1521400504E8C /* SwiftRegex.swift */,
+				8BB363111CC1521400504E8C /* WebSocket.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB362CA1CC151BF00504E8C /* PinderChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB362F31CC151C000504E8C /* Build configuration list for PBXNativeTarget "PinderChat" */;
+			buildPhases = (
+				8BB362C71CC151BF00504E8C /* Sources */,
+				8BB362C81CC151BF00504E8C /* Frameworks */,
+				8BB362C91CC151BF00504E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinderChat;
+			productName = PinderChat;
+			productReference = 8BB362CB1CC151BF00504E8C /* PinderChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BB362DE1CC151C000504E8C /* PinderChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB362F61CC151C000504E8C /* Build configuration list for PBXNativeTarget "PinderChatTests" */;
+			buildPhases = (
+				8BB362DB1CC151C000504E8C /* Sources */,
+				8BB362DC1CC151C000504E8C /* Frameworks */,
+				8BB362DD1CC151C000504E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB362E11CC151C000504E8C /* PBXTargetDependency */,
+			);
+			name = PinderChatTests;
+			productName = PinderChatTests;
+			productReference = 8BB362DF1CC151C000504E8C /* PinderChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BB362E91CC151C000504E8C /* PinderChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB362F91CC151C000504E8C /* Build configuration list for PBXNativeTarget "PinderChatUITests" */;
+			buildPhases = (
+				8BB362E61CC151C000504E8C /* Sources */,
+				8BB362E71CC151C000504E8C /* Frameworks */,
+				8BB362E81CC151C000504E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB362EC1CC151C000504E8C /* PBXTargetDependency */,
+			);
+			name = PinderChatUITests;
+			productName = PinderChatUITests;
+			productReference = 8BB362EA1CC151C000504E8C /* PinderChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BB362C31CC151BF00504E8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Parth Saxena";
+				TargetAttributes = {
+					8BB362CA1CC151BF00504E8C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H3MR536ERJ;
+					};
+					8BB362DE1CC151C000504E8C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8BB362CA1CC151BF00504E8C;
+					};
+					8BB362E91CC151C000504E8C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8BB362CA1CC151BF00504E8C;
+					};
+				};
+			};
+			buildConfigurationList = 8BB362C61CC151BF00504E8C /* Build configuration list for PBXProject "PinderChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BB362C21CC151BF00504E8C;
+			productRefGroup = 8BB362CC1CC151BF00504E8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB362CA1CC151BF00504E8C /* PinderChat */,
+				8BB362DE1CC151C000504E8C /* PinderChatTests */,
+				8BB362E91CC151C000504E8C /* PinderChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BB362C91CC151BF00504E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB362D91CC151C000504E8C /* LaunchScreen.storyboard in Resources */,
+				8BB362D61CC151C000504E8C /* Assets.xcassets in Resources */,
+				8BB362D41CC151C000504E8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB362DD1CC151C000504E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB362E81CC151C000504E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB362C71CC151BF00504E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB3631B1CC1521400504E8C /* SocketEngineWebsocket.swift in Sources */,
+				8BB363151CC1521400504E8C /* SocketClientSpec.swift in Sources */,
+				8BB3631C1CC1521400504E8C /* SocketEventHandler.swift in Sources */,
+				8BB363171CC1521400504E8C /* SocketEngineClient.swift in Sources */,
+				8BB363241CC1521400504E8C /* SocketTypes.swift in Sources */,
+				8BB363251CC1521400504E8C /* SwiftRegex.swift in Sources */,
+				8BB363141CC1521400504E8C /* SocketAnyEvent.swift in Sources */,
+				8BB3631A1CC1521400504E8C /* SocketEngineSpec.swift in Sources */,
+				8BB363231CC1521400504E8C /* SocketStringReader.swift in Sources */,
+				8BB363131CC1521400504E8C /* SocketAckManager.swift in Sources */,
+				8BB363161CC1521400504E8C /* SocketEngine.swift in Sources */,
+				8BB363201CC1521400504E8C /* SocketLogger.swift in Sources */,
+				8BB363121CC1521400504E8C /* SocketAckEmitter.swift in Sources */,
+				8BB363261CC1521400504E8C /* WebSocket.swift in Sources */,
+				8BB3631F1CC1521400504E8C /* SocketIOClientStatus.swift in Sources */,
+				8BB3631E1CC1521400504E8C /* SocketIOClientOption.swift in Sources */,
+				8BB362D11CC151C000504E8C /* ViewController.swift in Sources */,
+				8BB363191CC1521400504E8C /* SocketEnginePollable.swift in Sources */,
+				8BB3631D1CC1521400504E8C /* SocketIOClient.swift in Sources */,
+				8BB363181CC1521400504E8C /* SocketEnginePacketType.swift in Sources */,
+				8BB363211CC1521400504E8C /* SocketPacket.swift in Sources */,
+				8BB363221CC1521400504E8C /* SocketParsable.swift in Sources */,
+				8BB362CF1CC151C000504E8C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB362DB1CC151C000504E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB362E41CC151C000504E8C /* PinderChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB362E61CC151C000504E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB362EF1CC151C000504E8C /* PinderChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BB362E11CC151C000504E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB362CA1CC151BF00504E8C /* PinderChat */;
+			targetProxy = 8BB362E01CC151C000504E8C /* PBXContainerItemProxy */;
+		};
+		8BB362EC1CC151C000504E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB362CA1CC151BF00504E8C /* PinderChat */;
+			targetProxy = 8BB362EB1CC151C000504E8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BB362D21CC151C000504E8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB362D31CC151C000504E8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BB362D71CC151C000504E8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB362D81CC151C000504E8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BB362F11CC151C000504E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BB362F21CC151C000504E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BB362F41CC151C000504E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PinderChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.PinderChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8BB362F51CC151C000504E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PinderChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.PinderChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8BB362F71CC151C000504E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinderChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.PinderChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinderChat.app/PinderChat";
+			};
+			name = Debug;
+		};
+		8BB362F81CC151C000504E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinderChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.PinderChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinderChat.app/PinderChat";
+			};
+			name = Release;
+		};
+		8BB362FA1CC151C000504E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinderChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.PinderChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinderChat;
+			};
+			name = Debug;
+		};
+		8BB362FB1CC151C000504E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinderChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.PinderChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinderChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BB362C61CC151BF00504E8C /* Build configuration list for PBXProject "PinderChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB362F11CC151C000504E8C /* Debug */,
+				8BB362F21CC151C000504E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB362F31CC151C000504E8C /* Build configuration list for PBXNativeTarget "PinderChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB362F41CC151C000504E8C /* Debug */,
+				8BB362F51CC151C000504E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BB362F61CC151C000504E8C /* Build configuration list for PBXNativeTarget "PinderChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB362F71CC151C000504E8C /* Debug */,
+				8BB362F81CC151C000504E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BB362F91CC151C000504E8C /* Build configuration list for PBXNativeTarget "PinderChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB362FA1CC151C000504E8C /* Debug */,
+				8BB362FB1CC151C000504E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BB362C31CC151BF00504E8C /* Project object */;
+}
